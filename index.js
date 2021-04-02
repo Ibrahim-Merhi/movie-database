@@ -55,6 +55,7 @@ app.get('/movies/get/by-date', function(req, res) {
   res.status(200).send(movies);
 });
 
+
 app.get('/movies/get/by-rating', function(req, res) {
   movies.sort(function(a,b){
       return b.rating-a.rating;
